@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+header {
+    width: 100vw;
+    padding: 0 7rem;
+    height: 4rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px 0px rgba(92, 91, 91, 0.75);
+    z-index: 100;
+    position: fixed;
+    
+}
+
+header .logo {
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .menu {
+    padding: 0 3rem;
+    color: gray;
+}
+
+nav .menu:hover{
+    color: white;
+    transition: .5s ease
+    
+}
+
+/* Section */
+
+section {
+    color: white;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    inset: 4rem 0 0 0;
+    
+}
+
+section .content {
+    max-width: 40%;
+    height: 100vh;
+    max-height: 40%;
+    position: relative;
+    inset: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+     
+}
+
+.content h1 {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 1.6srem;
+}
+
+.content h1 span {
+    font-family: 'Teko';
+    color: rgba(92, 91, 91, 0.75);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    padding-left: 0.4rem;
+}
+
+.content .text h1, h2, p{
+    padding-bottom: 2rem;
+}
+
+
+.content .text h2{
+    font-family: 'Teko';
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.content .text p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+/*imagem*/
+
+section .image {
+    position: absolute;
+    top: -10vh;
+    right: -92vh;
+    width: 100%;
+    height: 200%;
+}
+
+section .image img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
